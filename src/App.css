@@ -36,3 +36,311 @@
     transform: rotate(360deg);
   }
 }
+
+/* App.css */
+
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+.App {
+  text-align: center;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Navbar Styles */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #333;
+  color: #fff;
+  padding: 1rem 0;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li {
+  margin: 0 20px;
+  cursor: pointer;
+}
+
+.navbar ul li a {
+  color: #fff;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  color: #f9a826;
+}
+
+/* Section Styles */
+section {
+  padding: 100px 20px;
+  margin-top: 60px;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+  color: #333;
+}
+
+/* About Section */
+.about-section {
+  background: #f5f5f5;
+  padding: 80px 20px;
+}
+
+/* Skills Section */
+.skills-section {
+  background: #fff;
+  padding: 80px 20px;
+}
+
+.skills-logos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.skills-logos svg {
+  color: #4caf50;
+  transition: transform 0.3s ease;
+}
+
+.skills-logos svg:hover {
+  transform: scale(1.2);
+}
+
+/* Projects Section */
+.projects-section {
+  background: #f5f5f5;
+  padding: 80px 20px;
+}
+
+.carousel .slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+}
+
+.carousel .legend {
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+/* Contact Section */
+.contact-section {
+  background: #fff;
+  padding: 80px 20px;
+}
+
+.contact-section form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-section input,
+.contact-section textarea {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.contact-section button {
+  padding: 10px;
+  border: none;
+  background-color: #333;
+  color: #fff;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-section button:hover {
+  background-color: #f9a826;
+}
+
+/* Footer Styles */
+footer {
+  background: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin-top: 50px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar ul {
+    flex-direction: column;
+  }
+
+  .navbar ul li {
+    margin: 10px 0;
+  }
+
+  .skills-logos {
+    gap: 20px;
+  }
+  
+  section {
+    padding: 60px 20px;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .contact-section form {
+    width: 90%;
+  }
+}
+
+/* About Section */
+.about-section {
+  background: #f5f5f5;
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-container {
+  display: flex;
+  align-items: flex-start;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.about-content {
+  flex: 1;
+  min-width: 300px;
+  padding: 20px;
+}
+
+.about-content h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.about-content p {
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+.about-profile {
+  flex: 0.5;
+  min-width: 200px;
+  padding: 20px;
+  text-align: center;
+}
+
+.profile-picture {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border: 2px solid #333;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.social-icons a {
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #f9a826;
+}
+
+/* Responsive Styles for About Section */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-profile {
+    margin-top: 20px;
+  }
+}
+/* Projects Section */
+.projects-section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.projects-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+/* Carousel Image Styles */
+.carousel .slide img {
+  max-width: 80%; /* Adjust this value to control the image size */
+  height: auto; /* Maintain aspect ratio */
+  margin: 0 auto; /* Center image */
+}
+
+.carousel .legend {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+/* Ensure carousel container and slides are styled properly */
+.carousel .carousel .slide {
+  display: flex;
+  justify-content: center;
+}
+
